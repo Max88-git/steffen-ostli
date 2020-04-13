@@ -98,7 +98,7 @@ a:hover {
 	max-width: 100%;
   }
 /* Round profile picture on the About page */
-div.profilePic {
+div#profilePic {
 	width: 100px;
 	height: 100px;
 	display: block;
@@ -106,13 +106,23 @@ div.profilePic {
 }
 
 div.container {
+	max-width: 800px;
+	margin: auto;
+	padding: 100px 20px;
+}
+
+div.aboutContent {
 	font-size: 1em;
 	font-weight: 400;
 	text-align: left;
 	line-height: 1.5em;
-	max-width: 800px;
-	margin: auto;
-	padding: 100px 20px;
+}
+
+div.contactContent {
+	font-size: 1em;
+	font-weight: 400;
+	text-align: center;
+	line-height: 1.5em;
 }
 
 #awards {
