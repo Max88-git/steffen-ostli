@@ -6,7 +6,8 @@ body {
 	font-size: 2em;
 	font-weight: 800;
 	color: #000;
-	margin: 4px 0 4px 30px;
+	margin: 0 0 0 30px;
+	line-height: 50px;
 	text-decoration: none;
 	text-transform: uppercase;
 	display: inline-block;
@@ -20,13 +21,13 @@ body {
 	margin: 0;
 	width: 100%;
 	height: 50px;
-	overflow: hidden;
+	overflow: visible;
 	position: fixed;
 }
 
 #pageNav label, #hamburger {
 	display: none;
-  }
+}
 
 #pageNav ul {
     margin: 0;
@@ -41,11 +42,12 @@ body {
 
 #pageNav > ul > li > a {
 	color: #aaa;
+	background-color: #fff;
 	font-size: 1em;
 	font-weight: 400;
 	letter-spacing: 0.1em;
 	display: block;
-	line-height: 55px;
+	line-height: 50px;
 	padding: 0 24px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -53,30 +55,31 @@ body {
 
 @media screen and (max-width: 790px){
 /* Show Hamburger */
-#pageNav label {
-	display: block;
-	color: #000;
-	font-style: normal;
-	font-size: 1.5em;
-	padding: 15px;
-	float: right;
-}
-  
-/* Break down menu items into vertical */
-#pageNav ul li {
-	display: block;
-}
-#pageNav ul li {
-	border-top: 1px solid #000;
-	text-align: center;
-}
-  
-/* Toggle show/hide menu on checkbox click */
-#pageNav ul {
-	display: none;
-}
-#pageNav input:checked ~ ul {
-	display: block;
+	#pageNav label {
+		display: block;
+		cursor: pointer;
+		color: #000;
+		font-style: normal;
+		font-size: 1.5em;
+		padding: 10px 15px;
+		float: right;
+	}
+	
+	/* Break down menu items into vertical */
+	#pageNav ul li {
+		display: block;
+	}
+	#pageNav ul li {
+		border-top: 1px solid #000;
+		text-align: center;
+	}
+	
+	/* Toggle show/hide menu on checkbox click */
+	#pageNav ul {
+		display: none;
+	}
+	#pageNav input:checked ~ ul {
+		display: block;
 	}
 }
 
@@ -125,6 +128,22 @@ div.contactContent {
 	line-height: 1.5em;
 }
 
+.contactContent li {
+	list-style-type: none;
+}
+
+.contactContent h3 {
+	font-weight: 800;
+}
+
+.contactContent a {
+	color: #808080;
+}
+
+.contactContent a:hover {
+	color: #000;
+}	
+
 #awards {
 	list-style-type: none;
 	padding-left: 0;
@@ -151,7 +170,7 @@ footer {
 	bottom: 0;
 	width: 100%;
 	height: 200px;
-	background-color: #808080;
+	background-color: #303030;
 	color: white;
 }
 
@@ -169,7 +188,7 @@ footer {
 }
 
 .footerIcons a {
-	color: #000;
+	color: #808080;
 }
 
 .footerIcons a:hover {
@@ -182,9 +201,14 @@ footer {
 	padding-top: 10px;
 	margin-left: 30px;
 }
-/* Contact details styling in the footer*/
+/* Contact details styling in the footer */
+.banner {
+	width: 100%;
+	height: auto;
+  }
+
 .contact h3 {
-	color: #000;
+	color: #808080;
 	font-weight: 400;
 	letter-spacing: 0.2em;
 }
@@ -195,7 +219,7 @@ footer {
 
 .contact a {
 	font-size: 1em;
-	color: #000;
+	color: #808080;
 	text-transform: none;
 	text-decoration: none;
 }
