@@ -1,6 +1,6 @@
-# Steffen Østli portfolio site
+# Steffen Østli portfolio website
 
-My first website. A minimalist portfolio site for photographer Steffen Østli
+A minimalist portfolio website for photographer Steffen Østli
 
 # What I Learned
 
