@@ -2,7 +2,7 @@
 
 A minimalist portfolio website for photographer Steffen Østli
 
-# What I Learned
+# What I Learnt
 
 * How to use HTML and CSS to create a portfolio website.
 * Create multiple web pages with a navigation menu using anchor elements.
