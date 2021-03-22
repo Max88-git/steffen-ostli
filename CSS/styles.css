@@ -15,10 +15,10 @@ body {
 }
 
 #pageNav {
-    background-color: #fff;
+	background-color: #fff;
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
-    color: 	#808080;
-    display: block;
+	color: #808080;
+	display: block;
 	margin: 0;
 	width: 100%;
 	height: 50px;
@@ -26,12 +26,13 @@ body {
 	position: fixed;
 }
 
-#pageNav label, #hamburger {
+#pageNav label,
+#hamburger {
 	display: none;
 }
 
 #pageNav ul {
-    margin: 0;
+	margin: 0;
 	padding: 0 10px;
 	float: right;
 }
@@ -54,8 +55,12 @@ body {
 	text-transform: uppercase;
 }
 
-@media screen and (max-width: 790px){
-/* Show Hamburger */
+#pageNav > ul > li > a:hover {
+	color: #000;
+}
+
+@media screen and (max-width: 790px) {
+	/* Show Hamburger */
 	#pageNav label {
 		display: block;
 		cursor: pointer;
@@ -65,7 +70,7 @@ body {
 		padding: 10px 15px;
 		float: right;
 	}
-	
+
 	/* Break down menu items into vertical */
 	#pageNav ul li {
 		display: block;
@@ -74,7 +79,7 @@ body {
 		border-top: 1px solid #000;
 		text-align: center;
 	}
-	
+
 	/* Toggle show/hide menu on checkbox click */
 	#pageNav ul {
 		display: none;
@@ -89,18 +94,18 @@ a:hover {
 	color: #000;
 }
 /* Grid with align-items value of stretch */
-.grid { 
+.grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 	grid-gap: 30px;
 	align-items: stretch;
 	padding-top: 85px;
 	margin: 0px 30px 30px 30px;
-	}
+}
 /* Portfolio images */
 .grid img {
 	max-width: 100%;
-  }
+}
 /* Round profile picture on the About page */
 div#profilePic {
 	width: 100px;
@@ -129,6 +134,11 @@ div.contactContent {
 	line-height: 1.5em;
 }
 
+.contactContent ul {
+	margin: 20px 0 0 0;
+	padding: 0;
+}
+
 .contactContent li {
 	list-style-type: none;
 }
@@ -139,30 +149,31 @@ div.contactContent {
 
 .contactContent a {
 	color: #808080;
+	text-decoration: none;
 }
 
 .contactContent a:hover {
 	color: #000;
-}	
+}
 
 #awards {
 	list-style-type: none;
 	padding-left: 0;
 }
 
-div.socialIcon  {
+div.socialIcon {
 	text-decoration: none;
 	text-align: center;
 }
 
 .fab {
-	color: 	#808080;
+	color: #808080;
 	padding: 5px;
 }
 /* Font Awesome icon hover interaction */
 .fab:hover {
 	transition: .5s ease-in-out;
-    transform: scale(1.2,1.2);
+	transform: scale(1.2, 1.2);
 }
 
 footer {
@@ -190,6 +201,7 @@ footer {
 
 .footerIcons a {
 	color: #808080;
+	text-decoration: none;
 }
 
 .footerIcons a:hover {
@@ -206,7 +218,7 @@ footer {
 .banner {
 	width: 100%;
 	height: auto;
-  }
+}
 
 .contact h3 {
 	color: #808080;
